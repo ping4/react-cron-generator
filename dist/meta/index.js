@@ -3,7 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.loadHeaders = exports.metadata = exports.HEADER = void 0;
+exports.loadHeaders = exports.metadata = exports.convertToReadable = exports.HEADER = void 0;
+
+var _cronstrue = _interopRequireDefault(require("cronstrue"));
 
 var _minutes = _interopRequireDefault(require("../cron-tab/minutes"));
 
@@ -25,6 +27,12 @@ var HEADER = {
   MONTHLY: 'MONTHLY'
 };
 exports.HEADER = HEADER;
+
+var convertToReadable = function convertToReadable(cronExpr, opts) {
+  return _cronstrue.default.toString(cronExpr, opts);
+};
+
+exports.convertToReadable = convertToReadable;
 var HEADER_VALUES = {
   MINUTES: 'Minutes',
   HOURLY: 'Hourly',

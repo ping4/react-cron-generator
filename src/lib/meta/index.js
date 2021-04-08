@@ -1,3 +1,4 @@
+import cronstrue from 'cronstrue';
 import Minutes from '../cron-tab/minutes';
 import Daily from '../cron-tab/daily';
 import Hourly from '../cron-tab/hourly';
@@ -11,6 +12,8 @@ export const HEADER = {
     WEEKLY: 'WEEKLY',
     MONTHLY: 'MONTHLY'
 };
+
+export const convertToReadable = (cronExpr, opts) => cronstrue.toString(cronExpr, opts);
 
 const HEADER_VALUES = {
     MINUTES: 'Minutes',
