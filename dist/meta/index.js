@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -16,6 +14,8 @@ var _hourly = _interopRequireDefault(require("../cron-tab/hourly"));
 var _weekly = _interopRequireDefault(require("../cron-tab/weekly"));
 
 var _monthly = _interopRequireDefault(require("../cron-tab/monthly"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var HEADER = {
   MINUTES: 'MINUTES',
