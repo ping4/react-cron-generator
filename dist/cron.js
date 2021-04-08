@@ -13,8 +13,6 @@ var _i18n = _interopRequireDefault(require("cronstrue/i18n"));
 
 var _meta = require("./meta");
 
-require("./cron-builder.css");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }

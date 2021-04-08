@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import cronstrue from 'cronstrue/i18n';
 import { metadata, loadHeaders } from './meta';
-import './cron-builder.css';
 
 export default class Cron extends Component {
     
